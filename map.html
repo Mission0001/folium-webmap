@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_0ac93d209236bdf46f453510a4ebfd80 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_0ac93d209236bdf46f453510a4ebfd80" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_0ac93d209236bdf46f453510a4ebfd80 = L.map(
+        'map_0ac93d209236bdf46f453510a4ebfd80', {
+        center: [9.199654070152762, 125.58634745697059],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_c4760b437e73467734c31efe02b188da = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": "OpenStreetMap.Mapnik",
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+    
+        var marker_1ebdb8567d57db7069bb58f5e9de8644 = L.marker(
+            [9.159806568097203, 125.5605428297902],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+
+                var icon_40b993a8a9ec9bd1c1414e900d5658c5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1ebdb8567d57db7069bb58f5e9de8644.setIcon(icon_40b993a8a9ec9bd1c1414e900d5658c5);
+            
+    
+            var popup_ec6846ff7cf5d82f945d9020c116cf08 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ebd6dea022e660efa6640c2ae822bfda = $(`<div id="html_ebd6dea022e660efa6640c2ae822bfda" style="width: 100.0%; height: 100.0%;">Your Here!</div>`)[0];
+                popup_ec6846ff7cf5d82f945d9020c116cf08.setContent(html_ebd6dea022e660efa6640c2ae822bfda);
+            
+
+            marker_1ebdb8567d57db7069bb58f5e9de8644.bindPopup(popup_ec6846ff7cf5d82f945d9020c116cf08)
+            ;
+
+            
+        
+    
+        marker_1ebdb8567d57db7069bb58f5e9de8644.bindTooltip(
+            `<div>`
+            + `Starting Point` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e4b8ebfcbe365c3cd6a53e31ec50915e = L.marker(
+            [9.16212466828855, 125.52175206785225],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_3eed602cf8c533a0c8d2fca9d37390ae = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_851fa2e91259231a9834a25d51eb9ca4 = $(`<div id="html_851fa2e91259231a9834a25d51eb9ca4" style="width: 100.0%; height: 100.0%;"><img src='https://mapio.net/images-p/37683381.jpg'  alt='Hanging Bridge' width='300px' heigth='300px'> <h3>This is the Hanging Bridge</h3></div>`)[0];
+                popup_3eed602cf8c533a0c8d2fca9d37390ae.setContent(html_851fa2e91259231a9834a25d51eb9ca4);
+            
+
+            marker_e4b8ebfcbe365c3cd6a53e31ec50915e.bindPopup(popup_3eed602cf8c533a0c8d2fca9d37390ae)
+            ;
+
+            
+        
+    
+        marker_e4b8ebfcbe365c3cd6a53e31ec50915e.bindTooltip(
+            `<div>`
+            + `I'm the hanging bridge of Tubay.` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_38413f6f2a8bb59660c091531edf1592 = L.marker(
+            [9.163914704098966, 125.52126927021355],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_615808f822dc23c4cd14d9ac63898a26 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a2f51d6f38e4d039494ebb946fcddbca = $(`<div id="html_a2f51d6f38e4d039494ebb946fcddbca" style="width: 100.0%; height: 100.0%;"><img src='https://lh3.googleusercontent.com/p/AF1QipNLj0oGC3YrTRMK_FpEk9ABlsj2PANSLJFWc1_4=s1600-w400' width='300px' heigth='300px' alt='Rio Terreza'> <h3>This is the Rio Terreza</h3></div>`)[0];
+                popup_615808f822dc23c4cd14d9ac63898a26.setContent(html_a2f51d6f38e4d039494ebb946fcddbca);
+            
+
+            marker_38413f6f2a8bb59660c091531edf1592.bindPopup(popup_615808f822dc23c4cd14d9ac63898a26)
+            ;
+
+            
+        
+    
+        marker_38413f6f2a8bb59660c091531edf1592.bindTooltip(
+            `<div>`
+            + `Eating Place` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_022c223f8cf8427503293467a04a8a93 = L.marker(
+            [9.16714806080224, 125.52400207593381],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_541fa65160ffe6120cf01c4ad6486dfa = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_964ee5101aa5415823a958c5251f8bf7 = $(`<div id="html_964ee5101aa5415823a958c5251f8bf7" style="width: 100.0%; height: 100.0%;"><img src='https://lh5.googleusercontent.com/p/AF1QipOO0T5TQyACG_SjVgxkyX6_yn6DQFuw4AEiVUAQ=w408-h306-k-no' width='300px' heigth='300px' alt='Tubay Central Elem.School'> <h3>This is the Tubay Central Elementary School</h3></div>`)[0];
+                popup_541fa65160ffe6120cf01c4ad6486dfa.setContent(html_964ee5101aa5415823a958c5251f8bf7);
+            
+
+            marker_022c223f8cf8427503293467a04a8a93.bindPopup(popup_541fa65160ffe6120cf01c4ad6486dfa)
+            ;
+
+            
+        
+    
+        marker_022c223f8cf8427503293467a04a8a93.bindTooltip(
+            `<div>`
+            + `Tubay Central Elem.School` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8d6a60ffd85bbe4f2ee9dae73a1c17ef = L.marker(
+            [9.169658309690723, 125.53193068570708],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_8b9d5bc258a09c9bc5a21c6c2465e571 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_30c6c9958a4e5c95fcec691d41e73065 = $(`<div id="html_30c6c9958a4e5c95fcec691d41e73065" style="width: 100.0%; height: 100.0%;"><img src='https://upload.wikimedia.org/wikipedia/commons/f/fd/Tubay_Municipal_Hall_%28Original_Work%29.jpg' width='300px' heigth='300px' alt='Tubay Municipality'> <h3>This is The Municipality of Tubay</h3></div>`)[0];
+                popup_8b9d5bc258a09c9bc5a21c6c2465e571.setContent(html_30c6c9958a4e5c95fcec691d41e73065);
+            
+
+            marker_8d6a60ffd85bbe4f2ee9dae73a1c17ef.bindPopup(popup_8b9d5bc258a09c9bc5a21c6c2465e571)
+            ;
+
+            
+        
+    
+        marker_8d6a60ffd85bbe4f2ee9dae73a1c17ef.bindTooltip(
+            `<div>`
+            + `Municipality of Tubay` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f4f331cd1bdd8d1de575927d7847a225 = L.marker(
+            [9.17042091343352, 125.53219890658258],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_b4f1dcd9b2e9ebdfafed367da6fad5fc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_52e4032c5a5706a223c594d7fb46edfe = $(`<div id="html_52e4032c5a5706a223c594d7fb46edfe" style="width: 100.0%; height: 100.0%;"><img src='https://scontent-nrt1-1.xx.fbcdn.net/v/t1.18169-9/1383400_300418653496636_7910414633462993458_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFX2Cbr6IeIi-ndeqtkvTbBtfZsiQ7IFOW19myJDsgU5fWrQ4SrRu9F9PNDZiQ7xJKEhv3vREwV0BAwME-0vETJ&_nc_ohc=5wmPdXH-mC0AX_MsdWV&_nc_ht=scontent-nrt1-1.xx&oh=00_AT9YpozKcDVSCApjbNoJHd3PTalVkGxKE6KTfVmjwU6-NA&oe=62DD99B1' width='300px' heigth='300px' <h3>This is The Tubay National High School</h3></div>`)[0];
+                popup_b4f1dcd9b2e9ebdfafed367da6fad5fc.setContent(html_52e4032c5a5706a223c594d7fb46edfe);
+            
+
+            marker_f4f331cd1bdd8d1de575927d7847a225.bindPopup(popup_b4f1dcd9b2e9ebdfafed367da6fad5fc)
+            ;
+
+            
+        
+    
+        marker_f4f331cd1bdd8d1de575927d7847a225.bindTooltip(
+            `<div>`
+            + `Tubay National High School` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4e58add84688f29c491ed74fc40a2596 = L.marker(
+            [9.168964763851708, 125.52831332495336],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_886ff5d5adc3da216693fd5f79e95df8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_96d80c313b973c1da325ccdafc2efcfe = $(`<div id="html_96d80c313b973c1da325ccdafc2efcfe" style="width: 100.0%; height: 100.0%;"><img src='https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-6/285831500_1891882814355899_2781125828642303569_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGpELWduTeQEB-T5UGcB6q9lySQmUyLMRWXJJCZTIsxFS76qkxgdhJPOyQNxCu_w_xDErmzhBh-lq4HZz7_BiPz&_nc_ohc=cb7EHB1-Ip0AX_fwxPs&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&oh=00_AT9pdsNBnvF2CWjOtF6WTn5DtB0Zh4zpzMUSnLxcQnHLHQ&oe=62BDA56A' width='300px' heigth='300px'alt='La Frat Elem.School'> <h3>This is The La Fraternidad Elem.School</h3></div>`)[0];
+                popup_886ff5d5adc3da216693fd5f79e95df8.setContent(html_96d80c313b973c1da325ccdafc2efcfe);
+            
+
+            marker_4e58add84688f29c491ed74fc40a2596.bindPopup(popup_886ff5d5adc3da216693fd5f79e95df8)
+            ;
+
+            
+        
+    
+        marker_4e58add84688f29c491ed74fc40a2596.bindTooltip(
+            `<div>`
+            + `La Fraternidad Elem.School` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_80f19f7540d150d103ccdbd65fce7e7c = L.marker(
+            [9.216911720140146, 125.52280618761276],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_daf0ef54305b29dca30e5c55ec26b578 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_95e79c0efbe2733ef2db9c78c811ca80 = $(`<div id="html_95e79c0efbe2733ef2db9c78c811ca80" style="width: 100.0%; height: 100.0%;"><img src='https://scontent.fdvo3-1.fna.fbcdn.net/v/t1.6435-9/57172567_541058606301545_4996947917773209600_n.jpg?stp=dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeE7Qwf9Swlvl2F22Jd49t8-gMfGPogsIgGAx8Y-iCwiAY4cijgjsDvw5_buIcc0yrqE7BZZDvKkw23FlPGHpnTj&_nc_ohc=ooN8Gixk_aYAX_GvVwT&_nc_ht=scontent.fdvo3-1.fna&oh=00_AT-7SQX5NG9C_Me9ok5o73cFggbBKDDVXRTI-aFRCXZw9w&oe=62D9099A' width='300px' heigth='300px' alt='Lucbon Beach'> <h3>This is The Lucbon Beach</h3></div>`)[0];
+                popup_daf0ef54305b29dca30e5c55ec26b578.setContent(html_95e79c0efbe2733ef2db9c78c811ca80);
+            
+
+            marker_80f19f7540d150d103ccdbd65fce7e7c.bindPopup(popup_daf0ef54305b29dca30e5c55ec26b578)
+            ;
+
+            
+        
+    
+        marker_80f19f7540d150d103ccdbd65fce7e7c.bindTooltip(
+            `<div>`
+            + `Lucbon Beach` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2026983611c8bf4385a0f3a9f270c34e = L.marker(
+            [9.140300335753748, 125.520651339839],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_26dcdd3ed527924c0ca6a6f6f78f5718 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ed66b945ce2d009145f14177beee1f88 = $(`<div id="html_ed66b945ce2d009145f14177beee1f88" style="width: 100.0%; height: 100.0%;"><img src='https://clairelyhappy.files.wordpress.com/2016/08/fisher-boat.jpg?w=816'  alt='Caasinan Beach' width='300px' heigth='300px' <h3>This is the Caasinan Beach</h3></div>`)[0];
+                popup_26dcdd3ed527924c0ca6a6f6f78f5718.setContent(html_ed66b945ce2d009145f14177beee1f88);
+            
+
+            marker_2026983611c8bf4385a0f3a9f270c34e.bindPopup(popup_26dcdd3ed527924c0ca6a6f6f78f5718)
+            ;
+
+            
+        
+    
+        marker_2026983611c8bf4385a0f3a9f270c34e.bindTooltip(
+            `<div>`
+            + `Casinan Beach` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b1666aafa32be5e1a07db9117fca84a8 = L.marker(
+            [9.138478403117867, 125.54451227064747],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_241f6306f67471c26bb396dfc549bb68 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_02ea6bcc25bc6ca4095f6261988ed45c = $(`<div id="html_02ea6bcc25bc6ca4095f6261988ed45c" style="width: 100.0%; height: 100.0%;"><img src='https://steemitimages.com/640x0/http://i.imgur.com/JDL8SA0.jpg'  alt='Mount Pongkay' width='300px' heigth='300px' <h3>This is the Mount Pongkay</h3></div>`)[0];
+                popup_241f6306f67471c26bb396dfc549bb68.setContent(html_02ea6bcc25bc6ca4095f6261988ed45c);
+            
+
+            marker_b1666aafa32be5e1a07db9117fca84a8.bindPopup(popup_241f6306f67471c26bb396dfc549bb68)
+            ;
+
+            
+        
+    
+        marker_b1666aafa32be5e1a07db9117fca84a8.bindTooltip(
+            `<div>`
+            + `Mount Pongkay` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3aae21c8b1c821a31a3db18af46ade89 = L.marker(
+            [9.117047427208346, 125.5345660800705],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_fec5aa14f2c438640552e9be69543f39 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c38c4ba7df3722259455591395058890 = $(`<div id="html_c38c4ba7df3722259455591395058890" style="width: 100.0%; height: 100.0%;"><img src='https://scontent.fcgy2-1.fna.fbcdn.net/v/t31.18172-8/1974392_496550500472215_2069804401_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHJ5xzJGZFDiwv9MbwCQK_dMj53We2z2PsyPndZ7bPY-0EgonXwSefNI_1eSMjrXB2958e3QtpxFq-JgPl6G8WO&_nc_ohc=6FhcTr2sMsEAX9vlpS0&_nc_ht=scontent.fcgy2-1.fna&oh=00_AT82RgSSajMQXh6vOC7jNRfsZ95wONEBN7peYMPITjxl4g&oe=62DD0866'  alt='Caraga State University - Cabadbaran Campus'  width='300px' heigth='300px' <h3>This is the CSUCC</h3></div>`)[0];
+                popup_fec5aa14f2c438640552e9be69543f39.setContent(html_c38c4ba7df3722259455591395058890);
+            
+
+            marker_3aae21c8b1c821a31a3db18af46ade89.bindPopup(popup_fec5aa14f2c438640552e9be69543f39)
+            ;
+
+            
+        
+    
+        marker_3aae21c8b1c821a31a3db18af46ade89.bindTooltip(
+            `<div>`
+            + `School` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f55c7d94d5f7e4149a1e830920eb878f = L.marker(
+            [9.117254895317187, 125.57075971688235],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_7fea7158f78381200d4e279243ab0b4b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5ba92bb741a818dd28a2cef1868d4fed = $(`<div id="html_5ba92bb741a818dd28a2cef1868d4fed" style="width: 100.0%; height: 100.0%;"><img src='http://themes.googleusercontent.com/image?id=1fupio4xM9eVxyr-k5QC5RiCJlYR35r9dXsp63RKsKt64v33poi2MvnjkX_1MULBY8BsT&options=w1600'  width='300px' heigth='300px' alt='Dinabucan Church' <h3>This is the Dinabucan, Mabini Church</h3></div>`)[0];
+                popup_7fea7158f78381200d4e279243ab0b4b.setContent(html_5ba92bb741a818dd28a2cef1868d4fed);
+            
+
+            marker_f55c7d94d5f7e4149a1e830920eb878f.bindPopup(popup_7fea7158f78381200d4e279243ab0b4b)
+            ;
+
+            
+        
+    
+        marker_f55c7d94d5f7e4149a1e830920eb878f.bindTooltip(
+            `<div>`
+            + `Church` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2ab295bf73f95922c9f5324457b1d100 = L.marker(
+            [9.178165066198652, 125.60394092104814],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_70fb92b7298c3c0f531c819897969ee0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f29b482532ea85e724862e91d556cd2d = $(`<div id="html_f29b482532ea85e724862e91d556cd2d" style="width: 100.0%; height: 100.0%;"><img src='https://lh3.googleusercontent.com/p/AF1QipNA-FzoyNPo3pAruPCH_N33EbLC6npZnoYuS6YF=s1600-w400' width='300px' heigth='300px'  <h3>This is the Higanteng Bato</h3></div>`)[0];
+                popup_70fb92b7298c3c0f531c819897969ee0.setContent(html_f29b482532ea85e724862e91d556cd2d);
+            
+
+            marker_2ab295bf73f95922c9f5324457b1d100.bindPopup(popup_70fb92b7298c3c0f531c819897969ee0)
+            ;
+
+            
+        
+    
+        marker_2ab295bf73f95922c9f5324457b1d100.bindTooltip(
+            `<div>`
+            + `Tourist Spot` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b0e8a27d8ecc04474a622e00af3e55ab = L.marker(
+            [9.27513144184766, 125.5526700825197],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_376afef3f7d2aebe9256b4ac01d4a554 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a3d1f9fad47392178e1569abf7e034a0 = $(`<div id="html_a3d1f9fad47392178e1569abf7e034a0" style="width: 100.0%; height: 100.0%;"><img src='https://lh5.googleusercontent.com/p/AF1QipMJHiNjPCayQLM22atVmOp088bPVziwY0a4xh-Y=w408-h306-k-no' width='300px' heigth='300px'  alt='Rankerts Farm' <h3>This is the Rankerts Coffee Farm</h3></div>`)[0];
+                popup_376afef3f7d2aebe9256b4ac01d4a554.setContent(html_a3d1f9fad47392178e1569abf7e034a0);
+            
+
+            marker_b0e8a27d8ecc04474a622e00af3e55ab.bindPopup(popup_376afef3f7d2aebe9256b4ac01d4a554)
+            ;
+
+            
+        
+    
+        marker_b0e8a27d8ecc04474a622e00af3e55ab.bindTooltip(
+            `<div>`
+            + `Rankerts Coffee Farm` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5371709200be45bf7a3b1e3c45287379 = L.marker(
+            [9.122180942677552, 125.54623915553364],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_405bd16a11e81fdb2f5c558c800df341 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8aa9f0cc6cb8d0e44e2015de5e4208ce = $(`<div id="html_8aa9f0cc6cb8d0e44e2015de5e4208ce" style="width: 100.0%; height: 100.0%;"><img src='https://lh5.googleusercontent.com/p/AF1QipM0h5S97feiPIa6rfbS5DVzNtj92sfNqPvq-M4J=w408-h271-k-no' width='300px' heigth='300px' alt='Museo de Cabadbaran' <h3>This is the Museo de Cabadbaran</h3></div>`)[0];
+                popup_405bd16a11e81fdb2f5c558c800df341.setContent(html_8aa9f0cc6cb8d0e44e2015de5e4208ce);
+            
+
+            marker_5371709200be45bf7a3b1e3c45287379.bindPopup(popup_405bd16a11e81fdb2f5c558c800df341)
+            ;
+
+            
+        
+    
+        marker_5371709200be45bf7a3b1e3c45287379.bindTooltip(
+            `<div>`
+            + `Museo de Cabadbaran` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3eff7ad3c61b6a9c44bf562e8473feae = L.marker(
+            [9.127987125488069, 125.63149775616439],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_4d045d17fe297b594679ba24e3a326c9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a723a713732c16728d145fae9219fbc0 = $(`<div id="html_a723a713732c16728d145fae9219fbc0" style="width: 100.0%; height: 100.0%;"><img src='https://lh5.googleusercontent.com/p/AF1QipNLkTl8Hg-fO4u4uIHOzzQc-eHi5bG-hBAr4RE9=w408-h306-k-no'  width='300px' heigth='300px' alt='Puting Bato Elem. School' <h3>This is the Puting Bato Elem. School</h3></div>`)[0];
+                popup_4d045d17fe297b594679ba24e3a326c9.setContent(html_a723a713732c16728d145fae9219fbc0);
+            
+
+            marker_3eff7ad3c61b6a9c44bf562e8473feae.bindPopup(popup_4d045d17fe297b594679ba24e3a326c9)
+            ;
+
+            
+        
+    
+        marker_3eff7ad3c61b6a9c44bf562e8473feae.bindTooltip(
+            `<div>`
+            + `Puting Bato Elem. School` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5686a34cda9fe909fb73607b65629b6e = L.marker(
+            [9.165135508077226, 125.65789268237361],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+        
+    
+            var popup_62b1922157e5bb5c0dd2668d7cd7434c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_98c47cfd436b55c6a661e32c832c567e = $(`<div id="html_98c47cfd436b55c6a661e32c832c567e" style="width: 100.0%; height: 100.0%;"><img src='https://lh5.googleusercontent.com/p/AF1QipOXplHxNIvQ7RSs8KFmDx6OzXUZZBmZ25K1VBoV=w408-h306-k-no' width='300px' heigth='300px' alt='Tumipi Spring' <h3>This is the Tumipi Spring</h3></div>`)[0];
+                popup_62b1922157e5bb5c0dd2668d7cd7434c.setContent(html_98c47cfd436b55c6a661e32c832c567e);
+            
+
+            marker_5686a34cda9fe909fb73607b65629b6e.bindPopup(popup_62b1922157e5bb5c0dd2668d7cd7434c)
+            ;
+
+            
+        
+    
+        marker_5686a34cda9fe909fb73607b65629b6e.bindTooltip(
+            `<div>`
+            + `Tumipi Spring` + `</div>`,
+            {"sticky": true}
+        );
+        
+    var tile_layer_56a4e19b3f75e60b0f028dba40d063cc = L.tileLayer(
+        'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": "OpenTopoMap",
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+    var tile_layer_45871006695a89cafcd4a752f0c36e13 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png',
+        {
+        "attribution": "OpenStreetMap.France",
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+    var tile_layer_8afef32a54dfa7b9bcc8c34ec97f4e78 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
+        {
+        "attribution": "OpenStreetMap.HOT",
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+    
+        var geo_json_cf9b52b68598e7f35ee327ffe5c0033b = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[125.56046962738036, 9.159722024656395], [125.55703639984131, 9.160357545671701], [125.555362701416, 9.161967527156271], [125.55270195007323, 9.162772515162505], [125.55004119873045, 9.161925159315949], [125.5479383468628, 9.15806966469733], [125.54635047912598, 9.156290191534621], [125.54338932037352, 9.156840981798862], [125.54235935211182, 9.160781225717095], [125.54064273834229, 9.163789339510178], [125.53613662719725, 9.165526407703048], [125.53411960601807, 9.166204285668547], [125.53231716156004, 9.168280278887122], [125.5265235900879, 9.16760240488517], [125.52403450012207, 9.167305834602313], [125.52317619323729, 9.167687139206203], [125.5212450027466, 9.16243357306642], [125.52115917205809, 9.162645411914365]], "type": "LineString"}, "properties": {"Path": "Route1 - The Hanging Bridge", "highlight": {}, "stroke": "#33d17a", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#33d17a", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.56068420410158, 9.159722024656395], [125.55682182312012, 9.160315177639387], [125.55244445800781, 9.1626877796688], [125.54978370666504, 9.162009894991556], [125.54763793945312, 9.15751887633706], [125.54609298706053, 9.156502034044951], [125.54411888122557, 9.15658677101372], [125.54197311401367, 9.160908329632184], [125.54034233093263, 9.163789339510178], [125.53690910339354, 9.165229835686231], [125.53356170654295, 9.166331387643], [125.53218841552733, 9.168195544707675], [125.52635192871092, 9.167348201800737], [125.52326202392578, 9.167687139206203], [125.52210330963135, 9.164806160946855], [125.52128791809082, 9.164912079679075], [125.52118062973022, 9.164361301926526], [125.52120208740233, 9.163852890935265]], "type": "LineString"}, "properties": {"Path": "Route2 - The Rio Terreza", "highlight": {}, "stroke": "#0a534f", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#0a534f", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.5605125427246, 9.159891497038286], [125.55562019348145, 9.160993065550313], [125.55210113525389, 9.162348837491878], [125.55004119873045, 9.161670952167835], [125.5477237701416, 9.158450979215937], [125.54600715637206, 9.156417297055965], [125.54343223571776, 9.157942559766868], [125.53853988647461, 9.164721425938325], [125.5338191986084, 9.166755060562604], [125.53210258483887, 9.168195544707675], [125.52405595779418, 9.167411752588912], [125.5239486694336, 9.166755060562604]], "type": "LineString"}, "properties": {"Path": "Route3 - Tubay Central Elem.School", "highlight": {}, "stroke": "#ff7800", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#ff7800", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.56049108505249, 9.15978557680908], [125.55740118026733, 9.1600503773229], [125.55562019348145, 9.16178746379998], [125.55422544479369, 9.162645411914365], [125.55278778076173, 9.162698371606616], [125.5499017238617, 9.161967527156271], [125.5480670928955, 9.158694596610868], [125.54784178733826, 9.15742354749575], [125.5469298362732, 9.156692692196291], [125.54578185081482, 9.156004203945427], [125.54438710212708, 9.156269007276647], [125.54320693016052, 9.15724348183685], [125.54298162460327, 9.15981735288116], [125.54223060607909, 9.161194313274894], [125.54008483886717, 9.164594323387618], [125.53871154785156, 9.165293386853541], [125.53594350814818, 9.165166284507547], [125.53437709808351, 9.165907714217868], [125.5320382118225, 9.168915784588389]], "type": "LineString"}, "properties": {"Path": "Route4 - The Municipality of Tubay", "highlight": {}, "stroke": "#3584e4", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#3584e4", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.56068420410158, 9.160145705459575], [125.55647850036621, 9.16073885773529], [125.55150032043458, 9.162264101897108], [125.54909706115723, 9.159976233198927], [125.5462646484375, 9.156925718686832], [125.54343223571776, 9.15785782312132], [125.54265975952148, 9.160230441559584], [125.54008483886717, 9.164467220791428], [125.53665161132812, 9.165145100778792], [125.53201675415039, 9.168788683539157], [125.53236007690428, 9.170462177042074], [125.53240299224855, 9.170779928081688], [125.53094387054442, 9.171055312085885], [125.53075075149535, 9.170695194498949], [125.53096532821655, 9.170313893126234], [125.53178071975708, 9.17014442571798], [125.53231716156004, 9.170313893126234], [125.5322527885437, 9.170462177042074]], "type": "LineString"}, "properties": {"Path": "Route5- Tubay National High School", "highlight": {}, "stroke": "#9141ac", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#9141ac", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.52798271179199, 9.166733876928642], [125.52772521972655, 9.167729506359132], [125.53251028060912, 9.168640398924195], [125.53394794464111, 9.166797427826761], [125.53763866424559, 9.16510273331749], [125.54034233093263, 9.163662236625907], [125.54317474365234, 9.158366242691606], [125.54798126220702, 9.15785782312132], [125.55192947387694, 9.162264101897108], [125.55725097656249, 9.160569385757544], [125.5605125427246, 9.160060969339353], [125.56034088134766, 9.159213607025764], [125.55948257446289, 9.160399913698976]], "type": "LineString"}, "properties": {"Path": "Route6 - La Fraternidad Elem.School", "highlight": {}, "stroke": "#986a44", "stroke-opacity": 1, "stroke-width": 2, "style": {"color": "#986a44", "weight": 2}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.52420616149902, 9.225767747978058], [125.52446365356444, 9.222167112385655], [125.52536487579346, 9.221743505782705], [125.52575111389159, 9.217846301180915], [125.52429199218749, 9.21606712825473], [125.52313327789305, 9.214796284962008], [125.52257537841798, 9.21229694647999], [125.52257537841798, 9.210136487102767], [125.52304744720458, 9.207679478032453], [125.52351951599121, 9.202553593786321], [125.52416324615479, 9.199757625607491], [125.52673816680908, 9.197512362435539], [125.53042888641359, 9.194843446170681], [125.53030014038085, 9.188870084473406], [125.53107261657713, 9.185904548333111], [125.5290126800537, 9.178702428668705], [125.5327033996582, 9.172771161452008], [125.5327033996582, 9.168958151594692], [125.53708076477051, 9.165399305440461], [125.54137229919432, 9.161670952167835], [125.54334640502928, 9.15811203299737], [125.5466079711914, 9.156671507962312], [125.55150032043458, 9.162772515162505], [125.56059837341307, 9.159976233198927]], "type": "LineString"}, "properties": {"Path": "Route 7 - Lucbon Beach", "highlight": {}, "stroke": "#26beaf", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#26beaf", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.56059837341307, 9.160315177639387], [125.55871009826662, 9.135147674460729], [125.55055618286133, 9.129724141126562], [125.53982734680176, 9.129046193657688], [125.52806854248047, 9.130741059912728], [125.52343368530273, 9.134893448179442]], "type": "LineString"}, "properties": {"Path": "Route8 - Caasinan Beach", "highlight": {}, "stroke": "#da7878", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#da7878", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.56034088134766, 9.160230441559584], [125.55896759033203, 9.139554234511174], [125.5792236328125, 9.144808138694888], [125.58917999267578, 9.16073885773529], [125.59244155883789, 9.168026076288069], [125.6008529663086, 9.17548261020028], [125.6063461303711, 9.174465819348212], [125.60668945312499, 9.175143680240083]], "type": "LineString"}, "properties": {"Path": "Route9 - Higanteng Bato", "highlight": {}, "stroke": "#47a343", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#47a343", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.56042671203613, 9.160315177639387], [125.55879592895508, 9.139638975516347], [125.55845260620117, 9.135401900560623], [125.54961204528809, 9.129130937161797], [125.54162979125978, 9.128029270037397], [125.5393123626709, 9.129300424109585], [125.5404281616211, 9.13260540348621], [125.54162979125978, 9.134554479522265], [125.54300308227539, 9.135995094088257], [125.54583549499512, 9.137859410173567]], "type": "LineString"}, "properties": {"Path": "Route10 - Mount Pongkay", "highlight": {}, "stroke": "#5a1580", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#5a1580", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.56034088134766, 9.159976233198927], [125.55853843688963, 9.135232416514175], [125.54849624633789, 9.128707219439844], [125.54162979125978, 9.128029270037397], [125.53922653198242, 9.125741181288967], [125.54686546325685, 9.12201241262095]], "type": "LineString"}, "properties": {"Path": "Route11 - Museo De Cabadbaran", "highlight": {}, "stroke": "#cf0f3e", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#cf0f3e", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.56008338928223, 9.160060969339353], [125.5583667755127, 9.135995094088257], [125.54969787597656, 9.129554654380204], [125.54214477539061, 9.128283501214373], [125.53699493408202, 9.123114098329038], [125.53836822509767, 9.119300556387799], [125.5601692199707, 9.110063141512077], [125.56540489196777, 9.113029309945333], [125.56858062744142, 9.112775067901813], [125.57209968566895, 9.113537793489487], [125.5722713470459, 9.115995453747177]], "type": "LineString"}, "properties": {"Path": "Route12 -  DinabucaN, Mabini Church", "highlight": {}, "stroke": "#71d622", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#71d622", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.55982589721678, 9.16073885773529], [125.5575942993164, 9.135995094088257], [125.56943893432617, 9.132944373997333], [125.58145523071289, 9.13260540348621], [125.59123992919922, 9.131588490018581], [125.6001663208008, 9.128707219439844], [125.6063461303711, 9.127859782485405], [125.6157875061035, 9.12701234351709], [125.6202507019043, 9.128368244899749], [125.62797546386719, 9.127181831471853]], "type": "LineString"}, "properties": {"Path": "Route13 -  Puting Bato", "highlight": {}, "stroke": "#5f48b5", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#5f48b5", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.5517578125, 9.272911497538322], [125.55587768554686, 9.27189498741963], [125.56205749511719, 9.261390877185947], [125.555362701416, 9.250378166372007], [125.56669235229492, 9.218354634655965], [125.55896759033203, 9.16073885773529]], "type": "LineString"}, "properties": {"Path": "Route14 - Rankerts Coffee Farm", "highlight": {}, "stroke": "#1a5fb4", "stroke-opacity": 1, "stroke-width": 4, "style": {"color": "#1a5fb4", "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.56042671203613, 9.159976233198927], [125.55810928344727, 9.136673028339038], [125.54866790771483, 9.129215680645755], [125.5418872833252, 9.127944526271477], [125.53733825683594, 9.123368333009356], [125.53720951080322, 9.122224275521296], [125.53757429122925, 9.121461568491384], [125.53557872772215, 9.121503941146925], [125.53602933883668, 9.120253945693534], [125.53525686264037, 9.11811411280658], [125.53439855575562, 9.118453097089315], [125.5330467224121, 9.115105613193387], [125.53478479385376, 9.114279330693737], [125.53622245788573, 9.117690382000513], [125.53517103195189, 9.118135299333703]], "type": "LineString"}, "properties": {"Path": "Route15 -  Caraga State University - Cabadbaran Campus", "highlight": {}, "stroke": "#555555", "stroke-opacity": 1, "stroke-width": 2, "style": {"color": "#555555", "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_0ac93d209236bdf46f453510a4ebfd80 );
+        geo_json_cf9b52b68598e7f35ee327ffe5c0033b.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_cf9b52b68598e7f35ee327ffe5c0033b.bindTooltip(
+            function(layer){
+            // Convert non-primitive to String.
+            let handleObject = (feature)=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+            let fields = ['Path'];
+            
+            return '<table>' +
+            String(
+                fields.map(
+                columnname=>
+                    `<tr style="text-align: left;">
+                    <th style="padding: 4px; padding-right: 10px;">
+                    ${ columnname}
+                    </th>
+                    
+                    <td style="padding: 4px;">${handleObject(layer.feature.properties[columnname])
+                    }</td></tr>`
+                ).join(''))
+                +'</table>'
+            }, {"sticky": true});
+        
+    
+        var geo_json_0a46928350ce6919140a7918325c36ee = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[125.51931381225586, 9.146163972348372], [125.58969497680664, 9.14768927903407], [125.58969497680664, 9.15633256004679], [125.61286926269531, 9.16328092770019], [125.61304092407227, 9.178363501785519], [125.68943023681639, 9.178363501785519], [125.71414947509766, 9.147011365758729], [125.70951461791992, 9.093621647334897], [125.53390502929688, 9.08345127281091], [125.5294418334961, 9.099723733373704], [125.52343368530273, 9.1148089991827], [125.52257537841798, 9.120402250467745], [125.53047180175783, 9.124470014530589], [125.53596496582031, 9.126673367365914], [125.54214477539061, 9.124300525287229], [125.54643630981445, 9.123961546558927], [125.5491828918457, 9.121080214365112], [125.55347442626955, 9.120741232577421], [125.555362701416, 9.122436138295843], [125.55845260620117, 9.120741232577421], [125.56068420410158, 9.121588686442909], [125.55707931518555, 9.123114098329038], [125.55192947387694, 9.122266648086267], [125.54574966430664, 9.125656436979337], [125.53750991821288, 9.127859782485405], [125.53150177001953, 9.126842855481767], [125.52412033081055, 9.123792057073985], [125.52583694458009, 9.130910546095059], [125.52188873291017, 9.136673028339038], [125.51965713500977, 9.145316576920235]], "type": "LineString"}, "properties": {"Name": "Land1- Cabadbaran, Agusan Del Norte", "highlight": {}, "stroke": "#e01b24", "stroke-opacity": 1, "stroke-width": 5, "style": {"color": "red", "fillColor": "red", "fillOpacity": 0.2, "weight": 2}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.5352783203125, 9.288497617124671], [125.55450439453125, 9.21123789941638], [125.738525390625, 9.214626838844106], [125.73440551757812, 9.277655172487991], [125.73989868164062, 9.293918713631884], [125.57098388671874, 9.279010496405567], [125.5363082885742, 9.286803507259974]], "type": "LineString"}, "properties": {"Name": "Land2 - Santiago, Agusan del Norte", "highlight": {}, "stroke": "#e01b24", "stroke-opacity": 1, "stroke-width": 5, "style": {"color": "red", "fillColor": "red", "fillOpacity": 0.2, "weight": 2}}, "type": "Feature"}, {"geometry": {"coordinates": [[125.62179565429686, 9.180397058225124], [125.62042236328124, 9.204121020823573], [125.55484771728516, 9.210899003685554], [125.53459167480469, 9.285109389204356], [125.50437927246094, 9.292224629987832], [125.5081558227539, 9.268845439399795], [125.50609588623048, 9.256646982513738], [125.50506591796875, 9.248175582825738], [125.51090240478516, 9.238687373052816], [125.51158905029297, 9.226487870686679], [125.51776885986327, 9.217676856526577], [125.52257537841798, 9.205815528723493], [125.5301284790039, 9.193275978031352], [125.53081512451172, 9.17938028146323], [125.52257537841798, 9.168873417577032], [125.52120208740233, 9.165822979472178], [125.52171707153319, 9.16328092770019], [125.5246353149414, 9.161162537325966], [125.52609443664551, 9.160315177639387], [125.52832603454588, 9.159806760857442], [125.52918434143066, 9.15751887633706], [125.53004264831543, 9.155908874697898], [125.53115844726562, 9.15531571436112], [125.531587600708, 9.15455307818819], [125.53107261657713, 9.154214128252903], [125.52824020385741, 9.1537904403794], [125.52772521972655, 9.153620965088649], [125.52832603454588, 9.155230977089358], [125.52781105041505, 9.156756244890689], [125.52506446838377, 9.15811203299737], [125.522403717041, 9.159722024656395], [125.52068710327148, 9.161162537325966], [125.51905632019042, 9.161247273183475], [125.52085876464844, 9.158789925111247], [125.51965713500977, 9.146333451191879], [125.58763504028319, 9.148197713142977], [125.58832168579103, 9.15751887633706], [125.61149597167969, 9.164128280312541], [125.61115264892577, 9.179041355227948], [125.6205940246582, 9.180566520735272], [125.62179565429686, 9.180185229973539]], "type": "LineString"}, "properties": {"Name": "Land3- Tubay, Agusan Del Norte", "highlight": {}, "stroke": "#e01b24", "stroke-opacity": 1, "stroke-width": 5, "style": {"color": "red", "fillColor": "red", "fillOpacity": 0.2, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_0ac93d209236bdf46f453510a4ebfd80 );
+        geo_json_0a46928350ce6919140a7918325c36ee.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_0a46928350ce6919140a7918325c36ee.bindTooltip(
+            function(layer){
+            // Convert non-primitive to String.
+            let handleObject = (feature)=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+            let fields = ['Name'];
+            
+            return '<table>' +
+            String(
+                fields.map(
+                columnname=>
+                    `<tr style="text-align: left;">
+                    <th style="padding: 4px; padding-right: 10px;">
+                    ${ columnname}
+                    </th>
+                    
+                    <td style="padding: 4px;">${handleObject(layer.feature.properties[columnname])
+                    }</td></tr>`
+                ).join(''))
+                +'</table>'
+            }, {"sticky": true});
+        
+    
+            var layer_control_1094df2a216ac0032a6feee5bc19a132 = {
+                base_layers : { "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" : tile_layer_c4760b437e73467734c31efe02b188da,"OpenTopoMap" : tile_layer_56a4e19b3f75e60b0f028dba40d063cc,"OpenStreetMap France" : tile_layer_45871006695a89cafcd4a752f0c36e13,"OpenStreetMap Hot" : tile_layer_8afef32a54dfa7b9bcc8c34ec97f4e78, },
+                overlays : { "Path" : geo_json_cf9b52b68598e7f35ee327ffe5c0033b,"Land" : geo_json_0a46928350ce6919140a7918325c36ee, }
+                };
+            L.control.layers(
+                layer_control_1094df2a216ac0032a6feee5bc19a132.base_layers,
+                layer_control_1094df2a216ac0032a6feee5bc19a132.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_0ac93d209236bdf46f453510a4ebfd80);
+            
+                tile_layer_56a4e19b3f75e60b0f028dba40d063cc.remove();
+                tile_layer_45871006695a89cafcd4a752f0c36e13.remove();
+                tile_layer_8afef32a54dfa7b9bcc8c34ec97f4e78.remove();
+        
+</script>
